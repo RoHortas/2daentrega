@@ -1,0 +1,50 @@
+/* * INDEX */
+nav {
+
+    top: 800px;
+    background-color: $beige;
+    width: 100%;
+
+
+    .checkbtn {
+        font-size: 25px;
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+        color: $blanco;
+    }
+    
+    #check {
+        display: none;
+        
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    li {
+        padding: 2%;
+
+        a {
+            color: $blanco;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                color: $colorprincipal;
+            }
+        }
+    }
+
+
+
+
+
+}

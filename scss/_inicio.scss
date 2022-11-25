@@ -1,0 +1,50 @@
+/* * index */
+.contenedor-index {
+    .cajita {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        .bolttitulo {
+            height: 100%;
+            width: 50vw;
+            margin: auto;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .container-title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+
+    .pag-principal {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        .hibolt {
+            height: 100%;
+            width: 35vw;
+
+        }
+
+        .des-hibolt {
+            font-size: 30px;
+            line-height: 40px;
+            width: 600px;
+            color: $colorprincipal;
+            font-weight: bold;
+        }
+    }
+
+}

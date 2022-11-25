@@ -1,0 +1,28 @@
+
+ /* * GALERIA */
+.container-galeria{
+    .img-galeria {
+        padding-top: 3rem;
+       padding-left: 5rem;
+        margin: 0;
+        
+      
+        .img2-gal {
+            height: 85%;
+            width: 70%;
+            margin-bottom: 4rem;
+            margin-left: 0;
+            margin-right: 0;
+            box-shadow: 7px 13px 37px rgb(10, 9, 9);
+            cursor: pointer;
+            transition: .2s;
+            
+
+            &:hover {
+                transform: scale(.9);
+            }
+            
+        
+        }
+    }
+}

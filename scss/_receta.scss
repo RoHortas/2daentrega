@@ -1,0 +1,112 @@
+/* * RECETA */
+.contenedor-receta {
+width: 100%;
+
+    @mixin modify($font-size, $display) {
+        font-size: $font-size;
+        display: $display;
+       
+    }
+
+    ul li{
+        padding: 2%;
+    }
+    .receta1 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        margin-top: 120px;
+
+        .img-cocinero {
+            width: 35vw;
+            height: 90%;
+
+
+        }
+
+        .tituloreceta {
+            @include modify(50px, grid);
+            justify-items: center;
+            text-align: center;
+            width: 75%;
+            padding-left: 110px;
+            padding-top: 5px;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .ingre {
+            @include modify(30px, grid);
+            color: $mostaza;
+            justify-content: center;
+
+
+
+        }
+
+        .listaingre1 {
+            display: grid;
+            justify-content: center;
+            list-style: disc;
+    
+
+        }
+    }
+
+    .prepa {
+        display: grid;
+        margin: 20px;
+        color: $mostaza;
+        font-size: 30px;
+        justify-content: left;
+    }
+
+    .receta2 {
+
+        @extend .receta1;
+        grid-template-columns: 1fr 1fr;
+
+        .tituloreceta1 {
+            @extend .tituloreceta;
+            padding-left: 160px;
+            padding-bottom: 10px;
+            padding-top: 150px;
+            width: 60%;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .ingre1 {
+            @extend .ingre;
+
+
+        }
+
+        .listaingre2 {
+            @extend .listaingre1;
+
+
+        }
+
+        .img-receta2 {
+            padding-left: 29%;
+            
+
+            .imagencocinero {
+                @extend .img-cocinero;
+                
+            }
+        }
+
+    }
+
+    .recetados {
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+}

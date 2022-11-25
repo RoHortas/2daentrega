@@ -1,0 +1,56 @@
+/* * Media 1250px */
+@media (max-width: 1250px) {
+
+
+
+    .contenedor-receta {
+        display: flex;
+        flex-direction: column;
+
+
+        .receta1 {
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+            .img-cocinero {
+                display: none;
+
+
+            }
+
+        }
+
+        .p2-receta {
+            width: 80%;
+            margin-bottom: 0px
+            
+        }
+
+        .receta2 {
+    
+            .img-receta2 {
+
+                .imagencocinero {
+                    @extend .img-cocinero;
+
+                }
+            }
+
+        }
+
+        .prepa {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            
+            
+        }
+
+    }
+
+
+    
+
+}
